@@ -1,7 +1,7 @@
 import LinearProgress from "@mui/material/LinearProgress";
 function CreateNote({ textHandler, saveHandler, inputText }) {
   //character limit
-  const charLimit = 100;
+  const charLimit = 300;
   const charLeft = charLimit - inputText.length;
   return (
     <div className="note" style={{ background: "rgba(255, 255, 255, 0)" }}>
@@ -11,7 +11,7 @@ function CreateNote({ textHandler, saveHandler, inputText }) {
         value={inputText}
         placeholder="Type...."
         onChange={textHandler}
-        maxLength="100"
+        maxLength="300"
       ></textarea>
       <div className="note__footer">
         <span className="label">{charLeft} left</span>
